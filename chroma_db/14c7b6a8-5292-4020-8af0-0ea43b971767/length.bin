@@ -1,0 +1,15 @@
+structures called? 
+64 
+CSRF What security attack does Laravel’s CSRF protection 
+prevent? 
+65 
+Yield 
+Directive 
+What Blade method (@yield('content')) reserves space for 
+dynamic content? 
+66 
+ 
+Match the correct answer from column A what suits column B   
+No Column (A) No Column (B) Answer  
+67 CRUD A Temporary message like "Post Created!" 67-C 
+68 Flash Message B Laravel’s templating system
