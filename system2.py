@@ -249,16 +249,14 @@ def display_chat_history(chat_history):
 
 
 def main():
-    st.set_page_config(page_title="Conversational PDF Chatbot (Gemini-only)")
-    st.title("📄 Conversational PDF Chatbot — Gemini 1.5 Flash (Modern SDK)")
+    st.set_page_config(page_title="Conversational PDF Chatbot ")
+    st.title("📄 Conversational PDF Chatbot ")
 
     # Sidebar
     with st.sidebar:
         st.header("1) Upload PDF")
         uploaded_file = st.file_uploader("Choose PDF", type="pdf", key="pdf_uploader")
-        st.header("2) Model")
-        st.markdown(f"**Gemini model:** `{GEMINI_MODEL}`")
-        st.markdown(f"**Embeddings model:** `{EMBEDDING_MODEL}`")
+       
 
     # Initialize embedding config
     embeddings_config = initialize_embeddings()
@@ -321,7 +319,7 @@ def main():
             display_chat_history(st.session_state.chat_history)
             
             with st.chat_message("assistant"):
-                with st.spinner("Retrieving context and asking Gemini..."):
+                with st.spinner("Retrieving context and asking AI"):
                     docs = retriever.invoke(prompt)
                     context = build_context_from_docs(docs)
                     
