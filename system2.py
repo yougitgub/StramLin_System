@@ -52,11 +52,11 @@ class Question(BaseModel):
     options: List[str] = Field(description="A list of 4 unique and plausible possible answers.")
     correct_answer: str = Field(description="The exact text of the correct option.")
     user_selection: Optional[str] = Field(None)
-
+    model_config = ConfigDict(extra="allow")
 
 class Quiz(BaseModel):
     questions: List[Question] = Field(description="A list of exactly 5 multiple choice questions.")
-
+    model_config = ConfigDict(extra="allow")
 
 # -------------------------
 # Streamlit caching helpers
