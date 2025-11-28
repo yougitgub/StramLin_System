@@ -11,7 +11,7 @@ from typing import List, Optional
 
 import streamlit as st
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field,  ConfigDict
 
 # Vectorstore + loaders + splitter
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
