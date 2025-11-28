@@ -25,3 +25,13 @@ tqdm==4.66.5
 numpy==1.26.4
 typing-extensions==4.12.2
 aiohttp==3.9.5
+streamlit
+pydantic
+langchain
+langchain-community
+langchain-text-splitters
+chromadb
+unstructured
+pypdf
+python-dotenv
+google-generativeai
