@@ -10,7 +10,7 @@ import re
 from typing import List, Optional
 
 import streamlit as st
-from dotenv import load_dotenv
+
 from pydantic import BaseModel, Field
 
 # Vectorstore + loaders + splitter
@@ -27,12 +27,12 @@ from google.genai import errors
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# Load .env
-load_dotenv()
 
-# CONFIG
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-CHROMA_DB_DIR = os.getenv("CHROMA_DB_DIR", "./chroma_db")
+import streamlit as st
+
+API_KEY = st.secrets["GEMINI_API_KEY"]
+CHROMA_DB_DIR = "./"
+
 GEMINI_MODEL = "gemini-2.5-flash"
 EMBEDDING_MODEL = "text-embedding-004"
 
