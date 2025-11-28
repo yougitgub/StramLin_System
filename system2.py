@@ -17,7 +17,7 @@ from pydantic import BaseModel, Field
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from chromadb.errors import InvalidArgumentError
+
 
 # NEW: Latest Google GenAI SDK
 from google import genai
