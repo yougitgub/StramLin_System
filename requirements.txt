@@ -1,0 +1,11 @@
+streamlit
+pydantic>=2.0
+google-genai
+chromadb
+sentence-transformers
+pypdf
+python-docx
+protobuf
+requests
+numpy
+pandas
