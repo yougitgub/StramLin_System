@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 import streamlit as st
 
-API_KEY = st.secrets["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 CHROMA_DB_DIR = "./"
 
 GEMINI_MODEL = "gemini-2.5-flash"
